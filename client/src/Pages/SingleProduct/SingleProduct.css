@@ -1,0 +1,83 @@
+.singleProduct
+{
+    padding: 10px 10% 0 10%;
+    background-color: white;
+}
+.singleProductHeader
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+}
+.singleproductHeaderd
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color: #333333;
+}
+.singleProductButtonDiv
+{
+    display: inline-block;
+}
+.singleProductButtonDiv button
+{
+    width: 180px;
+    padding: 10px;
+    margin-bottom: 10px;
+    /* background-color: white; */
+    border:1px solid #EBEBEB;
+}
+.singleproductQnty
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 21px;
+    font-size: 14px;
+    color: #999999;
+}
+.resetNdown
+{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+}
+.resetNdown:hover
+{
+    background-color: #09A2A5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #ffffff;
+}
+.singleProductSelect
+{
+    height: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-style: 14px;
+    line-height: 24px;
+    color: #09a2a5;
+
+}
+.singleProductSelect option :hover
+{
+    background-color:#81b4b5;
+    color: #09A2A5;
+}
+#inputPlaceholder::placeholder
+{
+    color: #09a2a5;
+}
+.parameters
+{
+    font-size: 12px;
+    color: #09A2A5;
+}

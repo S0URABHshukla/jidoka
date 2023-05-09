@@ -1,15 +1,22 @@
 import { Box } from '@chakra-ui/react'
 import React from 'react'
 import Body from '../Components/Body/Body'
-import Navbar from '../Components/Navbar'
-import { Footer } from '../Components/Footer/Footer'
+import YouTube from 'react-youtube';
 
 function Home() {
   return (
     <Box>
-      <Navbar/>
+      <div>
+        <YouTube
+          videoId="hTQTuwbrVVg"
+          opts={{
+            width: window.innerWidth.toString(),
+            height: '500',
+            autoplay: 1,
+          }}
+        />
+      </div>
       <Body/>
-      <Footer/>
     </Box>
   )
 }

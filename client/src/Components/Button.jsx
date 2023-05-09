@@ -1,11 +1,12 @@
 import React from 'react';
 import './Button.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export function Button() {
+  // const navigate=useNavigate();
   return (
-    <Link to='sign-up'>
-      <button className='btn'>Our Products</button>
+    <Link to='products'>
+      <button className='btn' >Our Products</button>
     </Link>
   );
 }

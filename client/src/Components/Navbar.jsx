@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-// import Dropdown from './Dropdown';
-import YouTube from 'react-youtube';
 import logo from './jakoda2.jpg';
 
 function Navbar() {
@@ -75,7 +73,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className="navbar" style={{ position: 'sticky', top: '0px' }}>
+      <nav className="navbar" style={{ position: 'sticky', top: '0px',width:"100%" }}>
         <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
           <img
             src={logo}
@@ -103,14 +101,6 @@ function Navbar() {
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
           >
-            {/* <Link
-              to='/services'
-              className='nav-links'
-              onClick={closeMobileMenu}
-            >
-              Products <i className='fas fa-caret-down' />
-            </Link>
-            {dropdown && <Dropdown props={"products"}/>} */}
           </li>
           <li
             className="nav-item"
@@ -136,29 +126,9 @@ function Navbar() {
               {/* {dropdownth && <Dropdown props={"news"}/>} */}
             </Link>
           </li>
-          <li>
-            {/* <Link
-              to='/sign-up'
-              className='nav-links-mobile'
-              onClick={closeMobileMenu}
-            >
-             Contact us
-            </Link> */}
-          </li>
         </ul>
         <Button />
       </nav>
-
-      <div>
-        <YouTube
-          videoId="hTQTuwbrVVg"
-          opts={{
-            width: window.innerWidth.toString(),
-            height: '500',
-            autoplay: 1,
-          }}
-        />
-      </div>
     </>
   );
 }

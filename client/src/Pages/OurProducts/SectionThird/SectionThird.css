@@ -1,0 +1,73 @@
+.sectionSecond
+{
+    display: flex;
+    margin:20px 10% 20px 10%;
+    height: 400px;
+    color: #D8EAEB;
+}
+#indus-ctgry
+{
+    width: 320px;
+    background-image: url("https://www.yhdfa.vn/_nuxt/img/showInter02.3e9d953.png");
+    background-size: cover;
+}
+.indus
+{
+    background-color:#1B7BD8 ;
+    padding:15px;    
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 24px;
+}
+.fa-feature
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    padding: 25px;
+}
+.fa-feature > p
+{
+    margin: -2px 0 -2px 0;
+
+}
+#Slide-img
+{
+    width: 100%;
+}
+#Slide-img > img
+{
+    width: 100%; 
+    height:100%;
+}
+#faparts
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 5px;
+   
+}
+.productlist > img
+{
+    width: 100%; 
+    height:150px;
+    z-index: -10;
+}
+.productlist
+{
+    background-color: white;
+}
+.productlistName
+{
+    text-align: center;
+    z-index:10;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #696969;
+    margin-top: 0px;
+}

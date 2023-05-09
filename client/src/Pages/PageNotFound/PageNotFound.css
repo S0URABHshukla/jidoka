@@ -1,0 +1,17 @@
+.pageNotFound img
+{
+    color: black;
+    width: 75%;
+    height: 540px;
+    margin: auto;
+}
+.pageNotFound h1
+{
+    background-color: #fbb;
+    color:black;
+    font-family: monospace;
+    margin: 0 12.5% 0 12.5%;
+    font-size: 30px;
+    font-weight: 600
+
+}

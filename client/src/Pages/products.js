@@ -1,11 +1,11 @@
-import { Box, Center, Heading, Image, SimpleGrid, VStack } from '@chakra-ui/react'
-import React from 'react'
-// import {products} from "./"
-const data = [
+import pic from "./funtionalmaterials.png"
+
+export const products =
+[
     {
         id: 1,
         name: "Functional Materials",
-        image: "funtionalmaterials.png",
+        image: `${pic}`
         // description: "Cost-effective, more than 6000 specifications and models"
     },
     {
@@ -55,34 +55,5 @@ const data = [
         name: "Transmission Parts",
         image: "TRANSMISSIONPARTS.png",
         // description: "Cost-effective, more than 6000 specifications and models"
-    },
-    // {
-    //     id: 10,
-    //     name: "Shaft Support",
-    //     image: "https://www.china-me.com/_nuxt/img/shaft_support.c8ef713.png",
-    //     description: "Cost-effective, more than 6000 specifications and models"
-    // }
+    }
 ]
-
-
-function Products() {
-  return (
-    <Box p={5} bg="whitesmoke">
-    <Center>
-        <Heading margin={"10px 0 30px 0"}>PRODUCTS</Heading></Center>
-    <SimpleGrid columns={3} w="90%" margin={'auto'}>
-     {
-        data && data?.map((product) => (
-            <VStack key={product.id} textAlign={'center'} style={{gap:"10px"}}>
-                <Box><Image src={product.image} h="300px" w="400px" margin={'auto'}/></Box>
-                <Box fontWeight="bold" margin="0 0 20px 0">{product.name}</Box>
-                <Box>{product.description}</Box>
-            </VStack>
-        ))
-     }   
-    </SimpleGrid>
-    </Box>
-  )
-}
-
-export default Products

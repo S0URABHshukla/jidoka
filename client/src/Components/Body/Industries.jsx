@@ -1,22 +1,17 @@
 import { Box, Center, Heading, Text } from '@chakra-ui/react'
 import React from 'react'
+import StrengthImageSlider from './StrengthImageSlider'
+import img1 from "./imge1.png"
+import img2 from "./BN.jpg"
+import img3 from "./iStock.jpg"
+import img4 from "./maxresdefault.jpg"
+import img5 from "./medizdeliya.jpeg"
 
 function Industries() {
   return (
-    <Box backgroundImage={'url("https://www.china-me.com/_nuxt/img/3C.4818aa3.png")'} color="white" h="500px" >
-        <Center><Heading>INDUSTRIES SERVED</Heading></Center>
-        <Box w="30%" p="10" fontSize={'xl'}>
-            <Box p="10">
-                <Text color="goldenrod" fontSize={'2xl'}>
-                    3C Industry
-                </Text>
-            </Box>
-            <Box>
-                <Text>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum dolores repellat eius deserunt ad fuga numquam nostrum, itaque obcaecati odit.
-                </Text>
-            </Box>
-        </Box>
+    <Box margin="auto" h="615px" >
+        <Center><Heading margin="0 0 20px 0">INDUSTRIES WE SERVE</Heading></Center>
+        <StrengthImageSlider/>
     </Box>
   )
 }
