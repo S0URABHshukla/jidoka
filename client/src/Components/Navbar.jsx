@@ -107,14 +107,14 @@ function Navbar() {
             onMouseEnter={onMouseEntert}
             onMouseLeave={onMouseLeavet}
           >
-            <Link
+            {/* <Link
               to="/contact-us"
               className="nav-links"
               onClick={closeMobileMenu}
-            >
-              Contact Us
-              {/* {dropdownt && <Dropdown props={"visit"}/>} */}
-            </Link>
+            > */}
+            <a className="nav-links" style={{color:"white"}} href="#footerhover">Contact Us</a>
+              
+            {/* </Link> */}
           </li>
           <li
             className="nav-item"
