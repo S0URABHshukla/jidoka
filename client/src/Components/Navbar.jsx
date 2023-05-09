@@ -93,7 +93,6 @@ function Navbar() {
           >
             <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
               About
-              {/* {dropdowntf && <Dropdown props={"about"}/>} */}
             </Link>
           </li>
           <li
@@ -107,14 +106,7 @@ function Navbar() {
             onMouseEnter={onMouseEntert}
             onMouseLeave={onMouseLeavet}
           >
-            {/* <Link
-              to="/contact-us"
-              className="nav-links"
-              onClick={closeMobileMenu}
-            > */}
-            <a className="nav-links" style={{color:"white"}} href="#footerhover">Contact Us</a>
-              
-            {/* </Link> */}
+          <a className="nav-links" style={{color:"white"}} href="#footerhover">Contact Us</a>
           </li>
           <li
             className="nav-item"
@@ -123,7 +115,6 @@ function Navbar() {
           >
             <Link to="/blogs" className="nav-links" onClick={closeMobileMenu}>
               Blogs
-              {/* {dropdownth && <Dropdown props={"news"}/>} */}
             </Link>
           </li>
         </ul>

@@ -1,59 +1,57 @@
-import pic from "./funtionalmaterials.png"
-
+import img1 from "./funtionalmaterials.png"
 export const products =
 [
     {
-        id: 1,
+        id: 0,
         name: "Functional Materials",
-        image: `${pic}`
-        // description: "Cost-effective, more than 6000 specifications and models"
+        image: img1
+    },
+    {
+        id: 1,
+        name: "Linear Motion",
+        image: "LinearMotionImage.png",
+        
     },
     {
         id: 2,
-        name: "Linear Motion",
-        image: "LinearMotionImage.png",
-        // description: "Cost-effective, more than 6000 specifications and models"
+        name: "Industrial Frame Structure Parts",
+        image: "industrialframestructureparts.png",
+        
     },
     {
         id: 3,
-        name: "Industrial Frame Structure Parts",
-        image: "industrialframestructureparts.png",
-        // description: "Cost-effective, more than 6000 specifications and models"
+        name: "Pneumatic Parts",
+        image: "pneumaticparts.png",
+        
     },
     {
         id: 4,
-        name: "Pneumatic Parts",
-        image: "pneumaticparts.png",
-        // description: "Cost-effective, more than 6000 specifications and models"
+        name: "Positioning Parts",
+        image: "positioningparts1.png",
+        
     },
     {
         id: 5,
-        name: "Positioning Parts",
-        image: "positioningparts1.png",
-        // description: "Cost-effective, more than 6000 specifications and models"
+        name: "Rotational Parts",
+        image: "rotationalparts.png",
+        
     },
     {
         id: 6,
-        name: "Rotational Parts",
-        image: "rotationalparts.png",
-        // description: "Cost-effective, more than 6000 specifications and models"
+        name: "Shafts",
+        image: "shafts.jpg",
+        
     },
     {
         id: 7,
-        name: "Shafts",
-        image: "shafts.jpg",
-        // description: "Cost-effective, more than 6000 specifications and models"
+        name: "Standard Parts",
+        image: "standardparts.png",
+        
     },
     {
         id: 8,
-        name: "Standard Parts",
-        image: "standardparts.png",
-        // description: "Cost-effective, more than 6000 specifications and models"
-    },
-    {
-        id: 9,
         name: "Transmission Parts",
         image: "TRANSMISSIONPARTS.png",
-        // description: "Cost-effective, more than 6000 specifications and models"
+        
     }
 ]
