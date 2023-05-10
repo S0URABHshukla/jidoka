@@ -14,15 +14,15 @@ function OfferForYou() {
                 <div > <WorkspacePremiumIcon style={{fontSize:"50px"}}/> </div>
             </div>
             <div className='flex' style={{background:"#D96E6E"}}>
-                <div>Quality assurance, assured procurement</div>
+                <div>Massive inventory, SKU 1100000+</div>
                 <div> <WorkspacePremiumIcon style={{fontSize:"50px"}}/> </div>
             </div>
             <div className='flex' style={{background:"#F09B2B"}}>
-                <div>Quality assurance, assured procurement</div>
+                <div>Unconditional free shiping</div>
                 <div> <WorkspacePremiumIcon style={{fontSize:"50px"}}/> </div>
             </div>
             <div className='flex' style={{background:"#5E9DD7"}}>
-                <div>Quality assurance, assured procurement</div>
+                <div>3D Drawing File</div>
                 <div> <WorkspacePremiumIcon style={{fontSize:"50px"}}/> </div>
             </div>
         </div>
