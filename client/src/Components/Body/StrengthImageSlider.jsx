@@ -35,7 +35,7 @@ function StrengthImageSlider() {
     useEffect(() => {
       const interval = setInterval(() => {
             setCurrentIndex((currentIndex + 1) % images.length);
-      }, 2500);  
+      }, 10000);  
       return () => clearInterval(interval);
     }, [currentIndex]);
   

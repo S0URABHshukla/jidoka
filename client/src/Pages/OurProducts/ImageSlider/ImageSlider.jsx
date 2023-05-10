@@ -15,29 +15,18 @@ const images = [
   ];
 function ImageSlider() {
     const [currentIndex, setCurrentIndex] = useState(0);
-    // const [isPaused, setIsPaused] = useState(false);
 
     useEffect(() => {
       const interval = setInterval(() => {
-        // if (!isPaused) {
             setCurrentIndex((currentIndex + 1) % images.length);
-          // }
-      }, 2000);  
+        
+      }, 10000);  
       return () => clearInterval(interval);
     }, [currentIndex]);
-    // const handleHover = () => {
-    //     setIsPaused(true);
-    //   };
-    
-    //   const handleMouseLeave = () => {
-    //     setIsPaused(false);
-    //   };
   
     return (
       <div>
         <img src={images[currentIndex]} alt="slideshow"
-        // onMouseEnter={handleHover}
-        // onMouseLeave={handleMouseLeave}
         />
       </div>
     );

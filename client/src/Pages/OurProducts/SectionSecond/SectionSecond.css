@@ -51,6 +51,10 @@
 {
     background-color: white;
 }
+.productlist:hover
+{
+    transform: scale(1.1);
+}
 .productlistName
 {
     text-align: center;

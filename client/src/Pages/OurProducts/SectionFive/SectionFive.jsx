@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import "./SectionFive.css"
 import { products } from '../../products'
+import { useNavigate } from 'react-router-dom';
 
 
 function SectionFive() {
+  const navigate=useNavigate();
   
   return (
     <div className='sectionSecond'>
@@ -19,7 +21,7 @@ function SectionFive() {
         <div id='faparts'>
         {products?.map((e,i)=>
         {
-          return <div key={i} className='productlist' style={{color:"black",border:"1px solid #c0c0c0"}}>
+          return <div onClick={()=>navigate(`/productModel/${e.id}`)} key={i} className='productlist' style={{color:"black",border:"1px solid #c0c0c0"}}>
             <img src={e.image} alt={e.name} />
             <p className='productlistName'>{e.name}</p>
           </div>

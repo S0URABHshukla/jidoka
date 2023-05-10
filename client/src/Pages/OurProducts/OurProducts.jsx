@@ -17,7 +17,7 @@ function OurProducts() {
       <SectionThird/>
       <SectionFour/>
       <SectionFive/>
-      <Introduction/>
+      {/* <Introduction/> */}
       <News/>
     </div>
   )

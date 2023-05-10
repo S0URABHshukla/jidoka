@@ -1,11 +1,13 @@
 import React from 'react';
 import './Footer.css';
+import { useNavigate } from 'react-router-dom';
 function Footer() {
+  const navigate=useNavigate();
   return (
     <div id="footerhover">
       <div id="footer">
         <div>
-          <p
+          <h6
             className="footerHeader"
             style={{
               marginBottom: '20px',
@@ -18,7 +20,7 @@ function Footer() {
             }}
           >
             (+91)-8826002054
-          </p>
+          </h6>
           <p>Jidoka</p>
           <p>P564, MEWLA MAHARAJPUR,</p>
           <p>MATHURA ROAD, FARIDABAD 121001, HARYANA</p>
@@ -34,6 +36,9 @@ function Footer() {
             </div>
             <div>
               <img
+              style={{
+                marginLeft:"5px"
+              }}
                 src="https://static.vecteezy.com/system/resources/previews/018/930/587/non_2x/linkedin-logo-linkedin-icon-transparent-free-png.png"
                 alt="linkedin"
               />
@@ -42,8 +47,8 @@ function Footer() {
               <img
                 style={{
                   borderRadius: '30px',
-                  width: '40px',
-                  height: '40px',
+                  width: '30px',
+                  height: '30px',
                   marginTop: '10px',
                   marginRight: '10px',
                 }}
@@ -53,14 +58,21 @@ function Footer() {
             </div>
             <div>
               <img
+              style={{
+                borderRadius: '0px',
+                width: '40px',
+                height: '40px',
+                marginTop: '5px',
+                marginRight: '10px',
+              }}
                 src="https://img.freepik.com/free-icon/youtube_318-566773.jpg"
-                alt="youtube"
+                alt="youtube"              
               />
             </div>
           </div>
         </div>
         <div>
-          <p
+          <h6
             style={{
               color: 'white',
               fontFamily: 'Arial, Helvetica, sans-serif',
@@ -71,12 +83,14 @@ function Footer() {
             }}
           >
             About us
-          </p>
-          <p>About Jidoka</p>
-          <p>Contact us</p>
+          </h6>
+          <p className='infinixFooter' onClick={()=>navigate("/about")}>About Jidoka</p>
+          <p >Contact us</p>
         </div>
       </div>
-
+      <div className='infinixFooter' style={{marginBottom:"-1px"}} id="copyright">
+      <a href="http://infinixtechlab.com" target="_blank" >Powered by Infinix Techlab</a>
+      </div>
       <div id="copyright">Copyright © 2023 JIDOKA All Rights Reserved</div>
     </div>
   );
