@@ -1,8 +1,14 @@
+.simageslidr
+{
+    position: relative;
+    z-index: -1;
+}
 .simageslidr img
 {
     height: 550px;
     width: 80%;
     margin: auto;
+    
 }
 .simageName
 {
@@ -11,9 +17,23 @@
     line-height: 24px;
     font-weight: 600;
     text-decoration:underline;
-    text-overflow: ellipsis;
     color:white;
-    z-index: 100;
-    margin-top: -520px;
-    margin-left: 560px;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
 }
+  
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 80%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50%);
+  }
+ 

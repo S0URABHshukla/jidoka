@@ -42,7 +42,9 @@ function StrengthImageSlider() {
     return (
       <div className="simageslidr" >
         <img src={images[currentIndex]} alt="slideshow"/>
-        <p className='simageName'>{names[currentIndex]}</p>
+        <div className='image-overlay'>
+          <p className='simageName'>{names[currentIndex]}</p>
+        </div>
       </div>
     );
 }

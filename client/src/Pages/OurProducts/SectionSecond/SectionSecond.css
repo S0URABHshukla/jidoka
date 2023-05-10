@@ -46,6 +46,7 @@
     width: 100%; 
     height:150px;
     z-index: -10;
+
 }
 .productlist
 {
@@ -54,6 +55,9 @@
 .productlist:hover
 {
     transform: scale(1.1);
+    /* border-radius: 50px; */
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+
 }
 .productlistName
 {
