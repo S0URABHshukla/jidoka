@@ -9,15 +9,6 @@ function Footer() {
         <div>
           <h6
             className="footerHeader"
-            style={{
-              marginBottom: '20px',
-              marginTop: '15px',
-              color: 'white',
-              fontFamily: 'Arial, Helvetica, sans-serif',
-              fontWeight: '600',
-              fontSize: '30px',
-              lineHeight: '40px',
-            }}
           >
             (+91)-8826002054
           </h6>

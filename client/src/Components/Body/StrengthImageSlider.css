@@ -1,14 +1,13 @@
 .simageslidr
 {
     position: relative;
-    z-index: -1;
+    /* z-index: -1; */
 }
 .simageslidr img
 {
     height: 550px;
     width: 80%;
-    margin: auto;
-    
+    margin:0 auto;    
 }
 .simageName
 {
@@ -36,4 +35,18 @@
     align-items: center;
     transform: translateX(-50%);
   }
- 
+  @media only screen and (max-width: 768px) {
+    .simageslidr img {
+      height: 350px;
+      width: 100%;
+    }
+    
+    .simageName {
+      font-size: 20px;
+      top: 5%;
+    }
+    
+    .image-overlay {
+      width: 100%;
+    }
+  }

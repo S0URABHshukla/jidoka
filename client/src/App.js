@@ -11,8 +11,6 @@ function App() {
   return (
     <BrowserRouter>
     <Box>
-      {/* <ColorModeSwitcher/> */}
-      {/* <Home/> */}
       <Navbar/>
       <AllRoutes/>
       <Footer/>

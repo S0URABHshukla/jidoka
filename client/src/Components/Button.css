@@ -8,11 +8,12 @@
     outline: none;
     border: none;
     font-size: 18px;
-    /* color: #fff; */
     color: white;
     cursor: pointer;
-    /* background-color: var(--primary); */
+    display: flex;
     background-color: #FBB917;
+    align-items: center;
+    text-align: center;
   }
   
   .btn:hover {
@@ -21,7 +22,13 @@
     background-color: transparent;
     color: #fff;
     border-radius: 4px;
-    /* border: 2px solid var(--primary); */
     border: 2px solid #FBB917;
     transition: all 0.3s ease-out;
+  }
+
+  @media (max-width:890px)
+  {
+    .btn{
+      display: none;
+    }
   }

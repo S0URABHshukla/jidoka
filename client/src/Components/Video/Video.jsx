@@ -17,7 +17,7 @@ function Video() {
     }, []);
     return (
       <div>
-        <video className='videodesign' ref={videoRef} autoPlay loop muted onEnded={() => videoRef.current.play()}>
+        <video style={{marginTop:"-80px"}} className='videodesign' ref={videoRef} autoPlay loop muted onEnded={() => videoRef.current.play()}>
           <source src={video} type="video/mp4" />
         </video>
       </div>

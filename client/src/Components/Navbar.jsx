@@ -1,124 +1,77 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import logo from './jakoda2.jpg';
+import logo from './jakoda2.png';
+import TemporaryDrawer from './TemporaryDrawer';
+
 
 function Navbar() {
-  const [click, setClick] = useState(false);
-  const [dropdown, setDropdown] = useState(false);
-  const [dropdownt, setDropdownt] = useState(false);
-  const [dropdownth, setDropdownth] = useState(false);
-  const [dropdowntf, setDropdownf] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
-  const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset;
+      if (scrollTop > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
 
-  const onMouseEnter = () => {
-    if (window.innerWidth < 960) {
-      setDropdown(false);
-    } else {
-      setDropdown(true);
-    }
-  };
-  const onMouseEntert = () => {
-    if (window.innerWidth < 960) {
-      setDropdownt(false);
-    } else {
-      setDropdownt(true);
-    }
-  };
-  const onMouseEnterth = () => {
-    if (window.innerWidth < 960) {
-      setDropdownth(false);
-    } else {
-      setDropdownth(true);
-    }
-  };
-  const onMouseEnterf = () => {
-    if (window.innerWidth < 960) {
-      setDropdownf(false);
-    } else {
-      setDropdownf(true);
-    }
-  };
-  const onMouseLeave = () => {
-    if (window.innerWidth < 960) {
-      setDropdown(false);
-    } else {
-      setDropdown(false);
-    }
-  };
-  const onMouseLeavet = () => {
-    if (window.innerWidth < 960) {
-      setDropdownt(false);
-    } else {
-      setDropdownt(false);
-    }
-  };
-  const onMouseLeaveth = () => {
-    if (window.innerWidth < 960) {
-      setDropdownth(false);
-    } else {
-      setDropdownth(false);
-    }
-  };
-  const onMouseLeavef = () => {
-    if (window.innerWidth < 960) {
-      setDropdownf(false);
-    } else {
-      setDropdownf(false);
-    }
-  };
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <>
-      <nav className="navbar" style={{ position: 'sticky', top: '0px',width:"100%" }}>
-        <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+      <nav
+        className="navbar"
+        style={{
+          position: 'sticky',
+          top: '0',
+          width: '100%',
+          backgroundColor: isScrolled ? 'black' : 'transparent'
+        }}
+      >
+        <Link to="/" className="navbar-logo">
           <img
             src={logo}
             alt=""
-            style={{ width: '150px', height: '70px', marginTop: '50px' }}
+            style={{
+              width: '100%',
+              height: '70px',
+              marginTop: '0px',
+              position: 'relative',
+            }}
           />
-          <i class="fab fa-firstdraft" />
         </Link>
-        <div className="menu-icon" onClick={handleClick}>
-          <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
-        </div>
-        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-          <li
-            className="nav-item"
-            onMouseEnter={onMouseEnterf}
-            onMouseLeave={onMouseLeavef}
-          >
-            <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
+        <ul className={'nav-menu'}>
+          <li className="nav-item">
+            <Link to="/about" className="nav-links">
               About
             </Link>
           </li>
-          <li
-            className="nav-item"
-            onMouseEnter={onMouseEnter}
-            onMouseLeave={onMouseLeave}
-          >
+          <li className="nav-item"></li>
+          <li className="nav-item">
+            <a
+              className="nav-links"
+              style={{ color: 'white' }}
+              href="#footerhover"
+            >
+              Contact Us
+            </a>
           </li>
-          <li
-            className="nav-item"
-            onMouseEnter={onMouseEntert}
-            onMouseLeave={onMouseLeavet}
-          >
-          <a className="nav-links" style={{color:"white"}} href="#footerhover">Contact Us</a>
-          </li>
-          <li
-            className="nav-item"
-            onMouseEnter={onMouseEnterth}
-            onMouseLeave={onMouseLeaveth}
-          >
-            <Link to="/blogs" className="nav-links" onClick={closeMobileMenu}>
+          <li className="nav-item">
+            <Link to="/blogs" className="nav-links">
               Blogs
             </Link>
           </li>
         </ul>
         <Button />
+      <TemporaryDrawer/>
       </nav>
     </>
   );

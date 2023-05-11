@@ -12,5 +12,4 @@ function Home() {
     </Box>
   )
 }
-
 export default Home
