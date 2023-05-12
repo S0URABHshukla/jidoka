@@ -55,3 +55,14 @@
       padding: 0 50px;
     }
   }
+  /* @media (max-width: 400px) {
+    .nav-menu {
+      display: none;
+    }
+    .navbar
+    {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 10px;
+    }
+  } */
