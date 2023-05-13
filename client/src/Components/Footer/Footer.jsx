@@ -79,9 +79,9 @@ function Footer() {
           <p >Contact us</p>
         </div>
       </div>
-      <div className='infinixFooter' style={{marginBottom:"-1px"}} id="copyright">
+      {/* <div className='infinixFooter' style={{marginBottom:"-1px"}} id="copyright">
       <a href="http://infinixtechlab.com" target="_blank" >Powered by Infinix Techlab</a>
-      </div>
+      </div> */}
       <div id="copyright">Copyright © 2023 JIDOKA All Rights Reserved</div>
     </div>
   );

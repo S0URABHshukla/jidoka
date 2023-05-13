@@ -50,7 +50,7 @@ const data = [
   {
     id: 9,
     name: 'Transmission Parts',
-    image: 'TRANSMISSIONPARTS.png',
+    image: 'tm.png',
   },
 ];
 

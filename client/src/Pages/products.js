@@ -6,7 +6,7 @@ import img5 from "./positioningparts1.png"
 import img6 from "./rotationalparts.png"
 import img7 from "./shafts.jpg"
 import img8 from "./standardparts.png"
-import img9 from "./TRANSMISSIONPARTS.png"
+import img9 from "./tm.png"
 
 export const products =
 [

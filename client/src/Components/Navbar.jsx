@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 import logo from './jakoda2.png';
 import TemporaryDrawer from './TemporaryDrawer';
-
+import { scroller } from 'react-scroll';
 
 function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -24,6 +24,18 @@ function Navbar() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+  function scrollToAbout() {
+    scroller.scrollTo('homeabout', {
+      smooth: true,
+      duration: 1400,
+    });
+  }
+  function scrollToContact() {
+    scroller.scrollTo('footerhover', {
+      smooth: true,
+      duration: 1400,
+    });
+  }
 
   return (
     <>
@@ -33,7 +45,7 @@ function Navbar() {
           position: 'sticky',
           top: '0',
           width: '100%',
-          backgroundColor: isScrolled ? 'black' : 'transparent'
+          backgroundColor: isScrolled ? 'white' : 'transparent',
         }}
       >
         <Link to="/" className="navbar-logo">
@@ -50,28 +62,41 @@ function Navbar() {
         </Link>
         <ul className={'nav-menu'}>
           <li className="nav-item">
-            <Link to="/about" className="nav-links">
+            <a
+              className="nav-links"
+              style={{
+                color: isScrolled ? 'black' : 'white',
+              }}
+              onClick={scrollToAbout}
+            >
               About
-            </Link>
+            </a>
           </li>
-          <li className="nav-item"></li>
           <li className="nav-item">
             <a
               className="nav-links"
-              style={{ color: 'white' }}
-              href="#footerhover"
+              style={{
+                color: isScrolled ? 'black' : 'white',
+              }}
+              onClick={scrollToContact}
             >
               Contact Us
             </a>
           </li>
           <li className="nav-item">
-            <Link to="/blogs" className="nav-links">
+            <Link
+              to="/blogs"
+              className="nav-links"
+              style={{
+                color: isScrolled ? 'black' : 'white',
+              }}
+            >
               Blogs
             </Link>
           </li>
         </ul>
         <Button />
-      <TemporaryDrawer/>
+        <TemporaryDrawer />
       </nav>
     </>
   );

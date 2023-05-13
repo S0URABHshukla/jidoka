@@ -7,7 +7,7 @@ import Video from '../Components/Video/Video'
 function Home() {
   return (
     <Box>
-       <Video/>       
+       <Video/>   
       <Body/>
     </Box>
   )

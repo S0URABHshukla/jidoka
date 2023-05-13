@@ -5,7 +5,7 @@ import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
 
 export function Button() {
   return (
-    <Link to='products'>
+    <Link to='*'>
       <button className='btn' > <ShoppingCartCheckoutIcon/> Our Products</button>
     </Link>
   );

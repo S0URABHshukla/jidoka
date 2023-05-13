@@ -24,7 +24,7 @@
     grid-template-columns: repeat(4,1fr);
     width: 95%;
     margin: auto;
-    gap: 15px;
+    gap: 1%;
   }
   .productsImageDetailName
   {

@@ -22,7 +22,7 @@ function TemporaryDrawer() {
   return (
     <div className='menuIcons'>
       <Button className='menuButtonHide' colorScheme='#FBB917' onClick={onOpen}>
-        <HamburgerIcon className='menuIcon'/>
+        <HamburgerIcon color={"#FBB917"} className='menuIcon'/>
       </Button>
       <Drawer placement={placement} onClose={onClose} isOpen={isOpen}>
         <DrawerOverlay />
@@ -32,7 +32,6 @@ function TemporaryDrawer() {
             <p
               className='drawer'
               onClose={onClose}
-              // style={{ backgroundColor: isClicked ? "" : "red" }}
               onMouseEnter={() => setIsClicked(false)}
               onMouseLeave={() => setIsClicked(false)}
               onClick={() => {
@@ -47,7 +46,6 @@ function TemporaryDrawer() {
             <p
               className='drawer'
               onClose={onClose}
-              // style={{ backgroundColor: isClicked ? "" : "red" }}
               onMouseEnter={() => setIsClicked(false)}
               onMouseLeave={() => setIsClicked(false)}
               onClick={() => {
@@ -62,7 +60,6 @@ function TemporaryDrawer() {
             <p
               className='drawer'
               onClose={onClose}
-              // style={{ backgroundColor: isClicked ? "" : "red" }}
               onMouseEnter={() => setIsClicked(false)}
               onMouseLeave={() => setIsClicked(false)}
               onClick={() => {
