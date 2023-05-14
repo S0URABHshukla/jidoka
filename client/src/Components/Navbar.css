@@ -81,6 +81,9 @@
   justify-content: end;
   margin-right: 2rem;
 }
+.nav-menu:hover {
+ cursor: pointer;
+}
 
 .nav-item {
   display: flex;

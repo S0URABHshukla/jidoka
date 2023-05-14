@@ -10,7 +10,7 @@ function Body() {
     <Box>
         <Products/>
         <HomeAbout/>
-        <Strength/>
+        {/* <Strength/> */}
         <Industries/>
     </Box>
   )

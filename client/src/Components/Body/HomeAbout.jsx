@@ -3,8 +3,10 @@ import homeabout from './HomeAbout.module.css';
 
 function HomeAbout() {
   return (
-    <div id='homeabout' className={homeabout.container}>
-      <div className={homeabout.aboutjidoka}>About JIDOKA</div>
+    <div id='homeabout'>
+    <div  className={homeabout.container}>
+      <div className={homeabout.aboutjidoka}>ABOUT JIDOKA</div>
+      <div ><hr className={homeabout.hr}/></div> 
       <div className={homeabout.about}>
         <div className={homeabout.text}>
           <p>
@@ -37,6 +39,8 @@ function HomeAbout() {
         </div>
       </div>
     </div>
+    </div>
+
   );
 }
 

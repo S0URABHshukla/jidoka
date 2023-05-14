@@ -2,23 +2,23 @@ import React from 'react';
 import './Footer.css';
 import { useNavigate } from 'react-router-dom';
 function Footer() {
-  const navigate=useNavigate();
+  // const navigate=useNavigate();
   return (
     <div id="footerhover">
       <div id="footer">
         <div>
-          <h6
+          {/* <h6
             className="footerHeader"
           >
             (+91)-8826002054
-          </h6>
+          </h6> */}
           <p>Jidoka</p>
           <p>P564, MEWLA MAHARAJPUR,</p>
           <p>MATHURA ROAD, FARIDABAD 121001, HARYANA</p>
           <p>sales@ipsarthillp.com</p>
         </div>
         <div>
-          <div id="socialsite">
+          {/* <div id="socialsite">
             <div>
               <img
                 src="https://static.vecteezy.com/system/resources/thumbnails/018/930/745/small/twitter-logo-twitter-icon-transparent-free-free-png.png"
@@ -60,9 +60,9 @@ function Footer() {
                 alt="youtube"              
               />
             </div>
-          </div>
+          </div> */}
         </div>
-        <div>
+        {/* <div>
           <h6
             style={{
               color: 'white',
@@ -77,7 +77,7 @@ function Footer() {
           </h6>
           <p className='infinixFooter' onClick={()=>navigate("/about")}>About Jidoka</p>
           <p >Contact us</p>
-        </div>
+        </div> */}
       </div>
       {/* <div className='infinixFooter' style={{marginBottom:"-1px"}} id="copyright">
       <a href="http://infinixtechlab.com" target="_blank" >Powered by Infinix Techlab</a>

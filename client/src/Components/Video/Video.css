@@ -4,6 +4,31 @@ video {
     height: 100%;
     object-fit: cover;
   }
+  .videojidoka
+  {
+    padding: 30px;
+    margin-top: 5%;
+  }
+  .videojidoka3
+  {
+    font-size: 30px;
+    color: #4C3F6D;
+    font-weight: 800;
+    margin-left: 37%;
+    margin-top: -4%;
+  }
+  .videojidoka1
+  {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .videojidoka2
+  {
+    width: 30%;
+    font-size: 22px;
+    font-weight: 700;
+    color: white
+  }
   
   video::-webkit-media-controls {
     display: none !important;
@@ -25,5 +50,84 @@ video {
     width: 100%;
     height: 600px;
     object-fit: cover;
-    margin-top: 0px;
+    margin-top: -80px;
+
+}
+.animated-text {
+  display: inline-block;
+  opacity: 0;
+  animation: fadeIn 3s linear forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .videojidoka3 {
+    margin-top: 12%;
+    font-size: 16px;
+    margin-left: 20%;
+   }
+   .videojidoka2
+   {
+     font-size: small;
+     width: fit-content;
+   }
+   .videojidoka1
+   {
+     /* margin-top: 10px; */
+     font-size: small;
+   }
+   .videojidoka
+   {
+     margin-top: 11%;
+   }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 769px) {
+  /* Styles for tablets */
+  .videojidoka3 {
+    margin-top: -5%;
+    font-size: 16px;
+   }
+   .videojidoka2
+   {
+     font-size: small;
+   }
+   .videojidoka1
+   {
+     /* margin-top: 10px; */
+     font-size: small;
+   }
+   .videojidoka
+   {
+     margin-top: 11%;
+   }
+  
+}
+@media only screen and (min-width: 770px) and (max-width: 1275px) {
+  /* Styles for tablets */
+  .videojidoka3 {
+   margin-top: -5%;
+   font-size: 20px;
+  }
+  .videojidoka2
+  {
+    font-size: medium;
+  }
+  .videojidoka1
+  {
+    /* margin-top: 10px; */
+    font-size: medium;
+  }
+  .videojidoka
+  {
+    margin-top: 8%;
+  }
 }

@@ -14,7 +14,7 @@ const data = [
   },
   {
     id: 2,
-    name: 'Linear Motion',
+    name: 'Linear Motion Parts',
     image: 'LinearMotionImage.png',
   },
   {
@@ -58,8 +58,9 @@ function Products() {
   return (
     <Box p={5} bg="whitesmoke">
       <Center>
-        <Heading margin={'10px 0 30px 0'}>PRODUCTS</Heading>
+        <Heading margin={'10px 0 0px 0'}>PRODUCTS</Heading>
       </Center>
+      <div ><hr className={"hr"}/></div> 
       <div className='productsDivGrid' >
         {data &&
           data?.map(product => (

@@ -36,10 +36,13 @@ function Navbar() {
       duration: 1400,
     });
   }
-
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
   return (
     <>
       <nav
+      id='top'
         className="navbar"
         style={{
           position: 'sticky',
@@ -48,7 +51,7 @@ function Navbar() {
           backgroundColor: isScrolled ? 'white' : 'transparent',
         }}
       >
-        <Link to="/" className="navbar-logo">
+        <Link to="/" className="navbar-logo" onClick={scrollToTop}>
           <img
             src={logo}
             alt=""
